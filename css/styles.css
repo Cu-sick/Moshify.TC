@@ -14,7 +14,7 @@
 }
 
 /*typography*/
-::seclection {
+::selection {
     background: var(--color-primary);
     color: #fff
 }
@@ -136,7 +136,7 @@ a{
 .list {
     list-style: none;
     padding-left: 0;
-    font-size: bold;
+    font-weight: bold;
 }
 
 .list--inline .list__item {
@@ -443,7 +443,7 @@ right: 2%;
 }
 
 .quote__text::after {
-    content: closed-quote;
+    content: close-quote;
 }
 
 .quote__author {
@@ -626,12 +626,12 @@ transform: rotate(0);
 
 .block--skewed-right {
     padding-bottom: calc(var(--padding-vertical) + 4rem) ;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem) ;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 
 .container {
@@ -676,7 +676,7 @@ transform: rotate(0);
 
 .nav.collapsible--expanded .nav__toggler {
     opacity: 1;
-box-shadow: 0 0 0 3 #666;
+box-shadow: 0px 0px 0px 3px #666;
 border-radius: 5px;
 }
 
@@ -763,12 +763,12 @@ border-radius: 5px;
 
 /*feature block*/
 .feature {
-    gap: 4rem 2rem;
-    margin: 12rem 0;
+    gap: 2rem 1rem;
+    margin: 1rem 0;
 }
 
 .feature:first-of-type { 
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 .feature__heading {
